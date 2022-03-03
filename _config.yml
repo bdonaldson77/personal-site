@@ -9,7 +9,7 @@ version: 2
 name: Ben Donaldson
 title: DevOps Engineer
 email: ben@devoptimus.co
-website: https://github.com/bdonaldson77/personal-site
+website: www.devoptimus.co (You are here)
 
 # Dark Mode (true/false/never)
 darkmode: true
@@ -132,6 +132,7 @@ content:
       - My wife and our cat, Eevee
 
       Cat tax paid in full:
+
       ![Eevee the cat](images/cattax.jpg "Eevee the cat")
 
 # Footer
