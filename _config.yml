@@ -48,69 +48,91 @@ linkedin_username: ben-donaldson
 # about_title: About Me
 about_profile_image: images/Mustache.png
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hello, I'm Ben. I'm a DevOps engineer by trade, with a focus on infrastructure automation. I came from the Ops side of DevOps, with a passion around hardware and infrastructure. As well as codifying infrastructure and configurations, I also do occasional consultation for smaller projects and tinker with my home network for fun.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I am most skilled in: <mark>Infrastructure as Code</mark> and <mark>Continuous Integration</mark>.
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: Raspberry Pi Home Server
+        link: github.com/bdonaldson77/rpi-docker-plex
         # link_text: Project Website
         additional_links:
-          - title:  sproogen/modern-resume-theme
+          - title:  bdonaldson77/rpi-docker-plex
             icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            url: https://github.com/bdonaldson77/rpi-docker-plex
+          # - title:  Github page for project (eg. bdonaldson77/rpi-docker-plex)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          For backing up media to stream in-home, so I don't have to mess with DVDs anymore.
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          I have my Raspberry Pi running in my 6U network rack at home backed by an NFS mount to my Netgear 6-bay ReadyNAS for RAIDed storage of media and personal files.
+
+          It runs a stack of microservices to provide a web frontend for media tracking, and Plex to serve it. The web services are fronted by CloudFlare for SSL and caching, as well as simple bot-blocking.
+
+          My longer-term goal once the chip shortage is over is to buy a few more Pis, rack-mount them, and set them up as bare-metal Kubernetes nodes so I can convert from docker-compose to k8s pods.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        title: Electronic Arts
+        link: ea.com
+        # link_text: ea.com
+        sub_title: Software Engineer
+        caption: June 2017 - Present
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          We Exist to Inspire the World to Play.
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+            As a member of the Infrastructure Engineering team for the Development and Release Engineering group (DRE IE), I design and implement products and services for the CI/CD side of game development.
+
+            DRE IE is a central team that handles the infrastructure for several studios while providing services for most of the EA Studios to enable game development teams to more rapidly iterate. As a part of this team, I have been responsible for:
+            
+            - Implementing a hardware-agnostic approach to cut down machine deployment times from dozens of hours to dozens of minutes
+            - Designing, implementing, and evangelizing DRE's use of HashiCorp Vault as a modern secrets storage solution
+            - Assuming point-of-contact roles and responsibilities for working with many of EA's central teams (e.g. EA Security, EA IT)
+      - layout: left
+        title: Core Information Technologies
+        link: coreit.ca
+        # link_text: coreit.ca
+        sub_title: Network Engineer
+        caption: April 2014 - June 2017
+        quote: >
+          Core IT is a Managed Service Provider for companies in the Metro Vancouver area, focused largely on the film and television and natural resources industries.
+        description: | # this will include new lines to allow paragraphs
+            As a Network Engineer at Core IT, I provided T2 and T3 support for many local and international customers ranging from a handful of employees to hundreds.
+            
+            While I started out in a help desk role, I was quickly promoted to provide more technical support for servers and networks for the larger clients. I planned and installed server racks, built networks out from the router down to the workstations, and provided on-site support for employees and equipment as required.  
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
+        title: British Columbia Institute of Technology
+        caption: 2012 - 2015
+        sub_title: Diploma in Computer Information Technology
         quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+          BCIT is the largest Computing and IT education provider in Western Canada. The School of Computing provides a comprehensive education in computer and information systems across a breadth of areas of knowledge.
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          While at BCIT, I learned the fundamentals of IT systems and management. Over the course of my schooling, I worked on several projects both alone and in a group to do things like stand up a personal Exchange server from scratch on the Azure cloud.
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          During my second year, I was admitted into the Co-op work education program and spent 8 months working at a Managed Service Provider as a Network Engineer, and returned to complete my diploma before joining my Co-op placement company full-time after graduation. 
 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
+      Alongside my interests in infrastructure engineering and DevOps some of my other interests and hobbies are:
+      - My home network (Raspberry Pi server running docker apps for personal use with a NAS to back it)
       - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      - Golf
+      - My wife and our cat, Eevee
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      Cat tax paid in full:
+      ![Eevee the cat](images/cattax.jpg "Eevee the cat")
 
 # Footer
 footer_show_references: true
