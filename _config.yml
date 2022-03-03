@@ -1,1 +1,149 @@
-theme: jekyll-theme-slate
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Ben Donaldson
+title: DevOps Engineer
+email: ben@devoptimus.co
+website: https://github.com/bdonaldson77/personal-site
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+# twitter_username: jekyll
+github_username:  bdonaldson77
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
+linkedin_username: ben-donaldson
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/Mustache.png
+about_content: | # this will include new lines to allow paragraphs
+  Hello, I'm Ben. I'm a DevOps engineer by trade, with a focus on infrastructure automation. I came from the Ops side of DevOps, with a passion around hardware and infrastructure. As well as codifying infrastructure and configurations, I also do occasional consultation for smaller projects and tinker with my home network for fun.
+
+  I am most skilled in: <mark>Infrastructure as Code</mark> and <mark>Continuous Integration</mark>.
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Raspberry Pi Home Server
+        link: github.com/bdonaldson77/rpi-docker-plex
+        # link_text: Project Website
+        additional_links:
+          - title:  bdonaldson77/rpi-docker-plex
+            icon: fab fa-github
+            url: https://github.com/bdonaldson77/rpi-docker-plex
+          # - title:  Github page for project (eg. bdonaldson77/rpi-docker-plex)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          For backing up media to stream in-home, so I don't have to mess with DVDs anymore.
+        description: | # this will include new lines to allow paragraphs
+          I have my Raspberry Pi running in my 6U network rack at home backed by an NFS mount to my Netgear 6-bay ReadyNAS for RAIDed storage of media and personal files.
+
+          It runs a stack of microservices to provide a web frontend for media tracking, and Plex to serve it. The web services are fronted by CloudFlare for SSL and caching, as well as simple bot-blocking.
+
+          My longer-term goal once the chip shortage is over is to buy a few more Pis, rack-mount them, and set them up as bare-metal Kubernetes nodes so I can convert from docker-compose to k8s pods.
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Electronic Arts
+        link: ea.com
+        # link_text: ea.com
+        sub_title: Software Engineer
+        caption: June 2017 - Present
+        quote: >
+          We Exist to Inspire the World to Play.
+        description: | # this will include new lines to allow paragraphs
+            As a member of the Infrastructure Engineering team for the Development and Release Engineering group (DRE IE), I design and implement products and services for the CI/CD side of game development.
+
+            DRE IE is a central team that handles the infrastructure for several studios while providing services for most of the EA Studios to enable game development teams to more rapidly iterate. As a part of this team, I have been responsible for:
+            
+            - Implementing a hardware-agnostic approach to cut down machine deployment times from dozens of hours to dozens of minutes
+            - Designing, implementing, and evangelizing DRE's use of HashiCorp Vault as a modern secrets storage solution
+            - Assuming point-of-contact roles and responsibilities for working with many of EA's central teams (e.g. EA Security, EA IT)
+      - layout: left
+        title: Core Information Technologies
+        link: coreit.ca
+        # link_text: coreit.ca
+        sub_title: Network Engineer
+        caption: April 2014 - June 2017
+        quote: >
+          Core IT is a Managed Service Provider for companies in the Metro Vancouver area, focused largely on the film and television and natural resources industries.
+        description: | # this will include new lines to allow paragraphs
+            As a Network Engineer at Core IT, I provided T2 and T3 support for many local and international customers ranging from a handful of employees to hundreds.
+            
+            While I started out in a help desk role, I was quickly promoted to provide more technical support for servers and networks for the larger clients. I planned and installed server racks, built networks out from the router down to the workstations, and provided on-site support for employees and equipment as required.  
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: British Columbia Institute of Technology
+        caption: 2012 - 2015
+        sub_title: Diploma in Computer Information Technology
+        quote: >
+          BCIT is the largest Computing and IT education provider in Western Canada. The School of Computing provides a comprehensive education in computer and information systems across a breadth of areas of knowledge.
+        description: | # this will include new lines to allow paragraphs
+          While at BCIT, I learned the fundamentals of IT systems and management. Over the course of my schooling, I worked on several projects both alone and in a group to do things like stand up a personal Exchange server from scratch on the Azure cloud.
+
+          During my second year, I was admitted into the Co-op work education program and spent 8 months working at a Managed Service Provider as a Network Engineer, and returned to complete my diploma before joining my Co-op placement company full-time after graduation. 
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in infrastructure engineering and DevOps some of my other interests and hobbies are:
+      - My home network (Raspberry Pi server running docker apps for personal use with a NAS to back it)
+      - Gaming
+      - Golf
+      - My wife and our cat, Eevee
+
+      Cat tax paid in full:
+      ![Eevee the cat](images/cattax.jpg "Eevee the cat")
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
