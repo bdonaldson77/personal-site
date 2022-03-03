@@ -9,7 +9,7 @@ version: 2
 name: Ben Donaldson
 title: DevOps Engineer
 email: ben@devoptimus.co
-website: www.devoptimus.co (You are here)
+website: www.devoptimus.co
 
 # Dark Mode (true/false/never)
 darkmode: true
