@@ -48,7 +48,7 @@ linkedin_username: ben-donaldson
 # about_title: About Me
 about_profile_image: images/Mustache.png
 about_content: | # this will include new lines to allow paragraphs
-  Hello, I'm Ben. I'm a infrastructure platform engineer in the games industry. While I came from the Ops side of DevOps, my focus has expanded from hardware and infrastructure to include security, automation, software development and system design.
+  Hello, I'm Ben. I'm an infrastructure/platform engineer in the games industry. While I came from the Ops side of DevOps, my focus has expanded from hardware and infrastructure to include security, automation, software development and system design.
   
   I am most skilled in: <mark>Infrastructure as Code</mark> and <mark>Continuous Integration</mark>.
   My regular tools of the trade include:
@@ -66,15 +66,15 @@ content:
     content:
       - layout: top-middle
         title: The Bakery
-        link: https://github.com/bdonaldson77/rpi-k8s-bakery
-        link_text: GitHub Kubernetes Configs
+        #link: https://github.com/bdonaldson77/rpi-k8s-bakery
+        #link_text: GitHub Kubernetes Configs
         additional_links:
-          - title:  Ansible Playbooks for node configuration
+          - title: Ansible Playbooks for node configuration
             icon: fab fa-github
             url: https://github.com/bdonaldson77/rpi-ansible-bakery
-          # - title:  Github page for project (eg. bdonaldson77/rpi-docker-plex)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+          - title: Kubernetes deployments for running services
+            icon: fab fa-github
+            url: https://github.com/bdonaldson77/rpi-k8s-bakery
         quote: >
           Private Raspberry Pi-based kubernetes cluster for running my home lab.
         description: | # this will include new lines to allow paragraphs
