@@ -101,8 +101,8 @@ content:
 
             Some of my achievements in this role include:
             - Designing and implementing a build-readiness initiative to accelerate build machine deployment by pre-syncing source code and assets to disks that are independently cloned and attached to new machines using accelerated deduplicated cloning. Reduced deployment and sync times by up to 80% while reducing storage use.
-            - Developing and internally-open-sourcing a secret-syncing tool to propagate service account passwords to secrets managers after rotation. Reduced downtime from stale secrets locking out automation signficantly for many operations teams across the company.
-            - Optimizing slow, unreliable Terraform deployment pipelines with a batching system to chunk deployments up. Reduced IaC toil and management of infrastcture changes significantly, saving DevOps engineers time babysitting pipelines.
+            - Developing and internally-open-sourcing a secret-syncing tool to propagate service account passwords to secrets managers after rotation. Reduced downtime from stale secrets locking out automation significantly for many operations teams across the company.
+            - Optimizing slow, unreliable Terraform deployment pipelines with a batching system to chunk deployments up. Reduced IaC toil and management of infrastructure changes significantly, saving DevOps engineers time babysitting pipelines.
 
             As a member of the Infrastructure Engineering team for the Development and Release Engineering group (DRE IE), I designed and implemented products and services for the CI/CD side of game development.
 
