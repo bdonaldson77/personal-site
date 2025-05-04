@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Ben Donaldson
-title: DevOps Engineer
+title: Platform Engineer
 email: ben@devoptimus.co
 website: www.devoptimus.co
 
@@ -48,33 +48,42 @@ linkedin_username: ben-donaldson
 # about_title: About Me
 about_profile_image: images/Mustache.png
 about_content: | # this will include new lines to allow paragraphs
-  Hello, I'm Ben. I'm a DevOps engineer by trade, with a focus on infrastructure automation. I came from the Ops side of DevOps, with a passion around hardware and infrastructure. As well as codifying infrastructure and configurations, I also do occasional consultation for smaller projects and tinker with my home network for fun.
-
+  Hello, I'm Ben. I'm a infrastructure platform engineer in the games industry. While I came from the Ops side of DevOps, my focus has expanded from hardware and infrastructure to include security, automation, software development and system design.
+  
   I am most skilled in: <mark>Infrastructure as Code</mark> and <mark>Continuous Integration</mark>.
+  My regular tools of the trade include:
+  - Hashicorp tooling such as <mark>Packer</mark>, <mark>Terraform</mark>, <mark>Vault</mark>, and Vagrant
+  - Configuration management such as <mark>Chef</mark> and <mark>Ansible</mark>
+  - CI/CD tools like <mark>Jenkins</mark>, <mark>GitLab CI</mark>, GitHub Actions, Azure DevOps, and CircleCI
+  - Programming and scripting, primarily in <mark>Golang</mark> and <mark>PowerShell</mark>. Familiarity with Python and Ruby.
+  - Virtualization of VMs and containers on-prem and in the cloud using <mark>Azure</mark> and <mark>vSphere</mark>, and <mark>Kubernetes</mark> and <mark>Docker swarm</mark>
+
+  When I'm not busy with work or family, I also do occasional consultation for smaller projects and tinker with my home network for fun.
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Raspberry Pi Home Server
-        link: github.com/bdonaldson77/rpi-docker-plex
-        # link_text: Project Website
+        title: The Bakery
+        link: https://github.com/bdonaldson77/rpi-k8s-bakery
+        link_text: GitHub Kubernetes Configs
         additional_links:
-          - title:  bdonaldson77/rpi-docker-plex
+          - title:  Ansible Playbooks for node configuration
             icon: fab fa-github
-            url: https://github.com/bdonaldson77/rpi-docker-plex
+            url: https://github.com/bdonaldson77/rpi-ansible-bakery
           # - title:  Github page for project (eg. bdonaldson77/rpi-docker-plex)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          For backing up media to stream in-home, so I don't have to mess with DVDs anymore.
+          Private Raspberry Pi-based kubernetes cluster for running my home lab.
         description: | # this will include new lines to allow paragraphs
-          I have my Raspberry Pi running in my 6U network rack at home backed by an NFS mount to my Netgear 6-bay ReadyNAS for RAIDed storage of media and personal files.
+          ![The Bakery](images/TheBakery.jpg "The Bakery")
+          A 6U network rack that makes up my home lab, consisting of a Unifi Dream Machine, TP-Link POE switch, four Raspberry Pi 4Bs, and a ThinkCentre Tiny. 
 
-          It runs a stack of microservices to provide a web frontend for media tracking, and Plex to serve it. The web services are fronted by CloudFlare for SSL and caching, as well as simple bot-blocking.
+          The Raspberry Pis and ThinkCentre make up a microk8s Kubernetes cluster that runs all my private cloud services. The web services are fronted by CloudFlare for SSL and caching, as well as simple bot-blocking.
 
-          My longer-term goal once the chip shortage is over is to buy a few more Pis, rack-mount them, and set them up as bare-metal Kubernetes nodes so I can convert from docker-compose to k8s pods.
+          There is a 6-bay NAS on a shelf underneath the rack serving as an NFS server to host persistent storage for the running services as well.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
@@ -88,10 +97,16 @@ content:
         quote: >
           We Exist to Inspire the World to Play.
         description: | # this will include new lines to allow paragraphs
-            As a member of the Infrastructure Engineering team for the Development and Release Engineering group (DRE IE), I design and implement products and services for the CI/CD side of game development.
+            As a member of the Troy team of the Game Production Solutions group, I work on tools and technology for build and release teams across the Creative Technologies group.
 
-            DRE IE is a central team that handles the infrastructure for several studios while providing services for most of the EA Studios to enable game development teams to more rapidly iterate. As a part of this team, I have been responsible for:
-            
+            Some of my achievements in this role include:
+            - Designing and implementing a build-readiness initiative to accelerate build machine deployment by pre-syncing source code and assets to disks that are independently cloned and attached to new machines using accelerated deduplicated cloning. Reduced deployment and sync times by up to 80% while reducing storage use.
+            - Developing and internally-open-sourcing a secret-syncing tool to propagate service account passwords to secrets managers after rotation. Reduced downtime from stale secrets locking out automation signficantly for many operations teams across the company.
+            - Optimizing slow, unreliable Terraform deployment pipelines with a batching system to chunk deployments up. Reduced IaC toil and management of infrastcture changes significantly, saving DevOps engineers time babysitting pipelines.
+
+            As a member of the Infrastructure Engineering team for the Development and Release Engineering group (DRE IE), I designed and implemented products and services for the CI/CD side of game development.
+
+            Responsibilities and accomplishments in this role included:
             - Implementing a hardware-agnostic approach to cut down machine deployment times from dozens of hours to dozens of minutes
             - Designing, implementing, and evangelizing DRE's use of HashiCorp Vault as a modern secrets storage solution
             - Assuming point-of-contact roles and responsibilities for working with many of EA's central teams (e.g. EA Security, EA IT)
@@ -126,8 +141,8 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in infrastructure engineering and DevOps some of my other interests and hobbies are:
-      - My home network (Raspberry Pi server running docker apps for personal use with a NAS to back it)
-      - Gaming
+      - Tinkering in my home lab, both in hardware and software
+      - Gaming, console and PC
       - Golf
       - My wife and our cat, Eevee
 
